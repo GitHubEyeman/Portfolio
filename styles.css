@@ -267,7 +267,7 @@ input {
 
 }
 /*Mobile Screen*/
-@media(max-width:767px){
+@media(max-width:960px){
 	.footerAll .leftContainer{
 		width: 85%;
 		margin-right:5%;
