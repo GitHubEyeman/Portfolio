@@ -57,7 +57,7 @@ header{
 
  
 
-/* Style the links inside the navigation bar */
+
 .topnav a {
     background-color: #ffc107;
 	color: #262626;
@@ -71,13 +71,13 @@ header{
 	box-shadow: 3px 3px 5px #2A2A2A;
 }
 
-/* Change the color of links on hover */
+
 .topnav a:hover {
     background-color: #FFE18A;
     color: black;
 }
 
-/* Add a color to the active/current link */
+
 .Me{
 	border-radius: 100%;
 	width: 30%;
@@ -267,7 +267,7 @@ input {
 
 }
 /*Mobile Screen*/
-@media(max-width:620px){
+@media(max-width:767px){
 	.footerAll .leftContainer{
 		width: 85%;
 		margin-right:5%;
