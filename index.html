@@ -1,61 +1,187 @@
-<!DOCTYPE HTML>
-<html lang = "en">
-<HEAD>
-	<meta charset="utf-8"/>
-		<TITLE>My Portfolio</TITLE>
-		<LINK href="aboutme-style.css" rel="stylesheet" type="text/css"  />
-</HEAD>
+<!DOCTYPE html>
+<html>
 
-<BODY >
- 
-	<div id="header">
-		 
-		<IMG id="banner" src="images/Banner Laboratory.png" alt="banner" align="left">
-		<H1 id ="WebTitle">My Portfolio</H1>
+<head>
+	<title>Portfolio</title>
+     <link rel="stylesheet" href="styles.css">
+		<script language="JavaScript">
+			
+		
+		var mybutton = document.getElementById("topBtn");
+
+		
+
+		function goToTop() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		  	
+		}
+			
+			
+		function myFunction() {
+		  var x = document.getElementById("myLinks");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+		  }
+		}
+		
+			
+		</script>
+
+<div class="mobile-container">
+
+		<!-- Top Navigation Menu -->
+		<div class="topnavM">
+		  
+		  <div id="myLinks">
+			<a href="#about">About Me</a>
+			<a class="e" href="#portfolio">Portfolio</a>
+			<a href="#resume">Resume</a>
+            <a class="e" href="#contact">Contact</a>
+		  </div>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<center><b>_____________________</b></center>
+		  </a>
+		</div>
+
+		
+
+	  <!-- End smartphone / tablet look -->
+		</div>
+
+		
+
+	
+	
+	<div class="Logo">
+		<img class ="Banner" src="images/Banner.png" alt=" Logo "/>
 	</div>
-	<BR>
-	<div id="nav">
-		<a href="index.html">Home</a>
-		<a href="Gallery.html">Gallery</a>
-		<a href="contacts.html">Contact</a>
-		<a href="services.html">Services</a>
-	</div> 
+</head>
+
+<body>
 	 
-	<div id="b2top">
-		<a href="#top">Back To Top</a>
+    <button onclick="goToTop()" id="topBtn" title="Go to top">Back to Top</button>
+	
+	<header>
+        <navbar>
+            <div class="navContainer">
+			<div class="topnav">
+                <a href="#about">About Me</a>
+			  	<a href="#portfolio">Portfolio</a>
+				<a href="#resume">Resume</a>
+                <a href="#contact">Contact</a>
+            </div>
+			</div>
+        </navbar>
+    </header>
+		
+	
+	<div class="section" id="about">
+	  <div class="container">
+		  <center><h1>About Me</h1></center>
+			<center><img class="Me" src="images/me.jpg" alt=" Me "/></center>
+			<p>Hi, I'm Mohamad Aiman Bin Saidin and I am a University Student in UITM Tapah. I'm a Computer Science student that is seeking for an internship to experience working in a well-established organization environment to further develop my skills. </p>
+	    <center><h1>Skills</h1></center>
+			<ul>
+			  	<li>Dreamweaver, Flash, Da Vinci Resolve, Adobe Photoshop/Krita, Blender</li>
+				<li>Flash</li>
+				<li>Visual Studio</li>
+				<li>Da Vinci Resolve</li>
+				<li>Photoshop/Krita</li>
+				<li>Blender</li>
+				
+		  	</ul>
+		  <center><h1>Languages</h1></center>
+		  	<ul>
+			  	<li>HTML/CSS/Javascript/JQuery</li>
+				<li>Java</li>
+				<li>PHP/MySql</li>
+				<li>C++</li>
+		  	</ul>
+		</div>
+			
 	</div>
-	
-	<BR>
-	<div id="container">
-	<div id="content">
-	
-	<H2>About me</H2>
-	<BR>
-	<BR>
-	
-	
-	<IMG id="myself" src="images/me.jpg" alt="picture of myself">
-	<BR><BR>
-	Hi, the picture above is me. I'm Mohamad Aiman Bin Saidin and I am  a University Student in UITM Tapah.
-	I was born in 2001 and I currently am taking the computer science course. 
-	My Matrix ID is 2019417544.
-	Moreover, I know quite a bit about coding. Although there are other things that
-	I like to do other than code.
-	<BR><BR>
-	<H2>My Interests</H2>
+	<div class="section" id="portfolio">
+		<div class="container" >
+			<center><h1>Portfolio</h1></center>
+			
+			<center>
+			<table class="portfolioTable">
+			  <tr>
+				<td> <img class ="iconT" src="images/My Portfolio.png" alt=" Portfolio "/><br>My Portfolio Website</td>
+				<td> <a class = "button" href="index.html">View Demo</a> </td>
+				<td> <a class = "button" href="">View Code</a> </td>
+			  </tr>
+			  <tr>
+				<td> <img class ="iconT" src="images/DurianWeb.png" alt=" Durian "/><br>(Wix)Durian Seller Website</td>
+				<td> <a class = "button" href="https://aimansaidin.wixsite.com/durian-seller/">View Demo</a> </td>
+				<td> Code unavailable </td>
+			  </tr>
+			  <tr>
+				<td> <img class ="iconT" src="images/ArtThumbnail.png" alt=" Art "/><br>All My Art and Animations </td>
+				<td> <a class = "button" href="Art.html">Art</a> </td>
+				<td> <a class = "button" href="Animations.html">Animations</a> </td>
+			  </tr>
+			</table>
+			</center>
+			
+			
+				<section class="portfolioMobile">
+				 <center><img class ="iconT" src="images/My Portfolio.png" alt=" Portfolio "/><br>My Portfolio Website</center> <br>
+				 <center><a class = "button" href="">View Demo</a> </center> <br>
+				 <center><a class = "button" href="">View Code</a> </center> <br>
+			  
+				 <center><img class ="iconT" src="images/DurianWeb.png" alt=" Durian "/><br>(Wix)Durian Seller Website</center> <br>
+				 <center><a class = "button" href="https://aimansaidin.wixsite.com/durian-seller/">View Demo</a> </center> <br>
 
-	<ul>
-	  <li>Drawing</li>
-	  <li>Coding</li>
-	  <li>2D Animation</li>
-	  <li>3D Animation</li>
-	  <li>Gaming</li>
-	</ul> 
-	
-	<BR><BR>
-	
-	</div>
-	</div>
+				 <center><img class ="iconT" src="images/ArtThumbnail.png" alt=" Art "/><br>All My Art and Animations </center> <br>
+				 <center><a class = "button" href="Art.html">Art</a> </center> <br>
+				 <center><a class = "button" href="Animations.html">Animations</a> </center> <br>
+				</section>
+			
+			
+			
 
-	</BODY>
-</HTML>
+		</div>
+	</div>
+	<div class="section" id="resume">
+		<div class="container" >
+			<center><h1>Resume</h1></center>
+			<center><a href="files/Resume - Mohamad Aiman Bin Saidin.pdf"><img src="images/resume.png" alt=" Resume " class="resume"/></a></center>
+			
+
+		</div>
+	</div>
+		
+	<footer class="footerAll" id="contact">
+	
+		<div class="leftContainer" >
+			<h3>Contacts</h3>
+			<p>Phone : </p>
+			<p>011-57699433</p>
+			<p>Email&nbsp; : </p>
+			<p>aimansaidin@gmail.com </p>
+			<p>Address : </p>
+			<p>Lot 29430, Lorong Masjid 3, Kampung Kurnia Jaya, 34600 Kamunting, Perak</p>
+			<br><br>
+		</div>
+		
+		<div class="rightContainer" >
+		  <h3>Contact Us!</h3>
+          <form id="form1" name="form1" method="post" action="mailto:aimansaidin@gmail.com">
+
+			
+            Message :            <br>
+            <textarea name="message" id="message"></textarea><br><br>
+			<input type="submit" class="button" value="Send">
+	      </form>
+          <br>
+</div>
+	
+</footer>
+	
+</body>
+
+</html>
