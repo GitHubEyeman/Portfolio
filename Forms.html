@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Forms Showcase</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+	<a href="index.html" id="returnBtn">< Return</a>
+	<script>
+        function getInputValue(){
+            // Selecting the input element and get its value 
+            var name = document.getElementById("name").value;
+            // Displaying the value
+            //alert(radioG);
+			var gender = "";
+			var chkBox = document.getElementById("chkBox").value;
+			var hobby = document.getElementById("hobby").value;
+			var student = document.getElementById("chkBox").value;
+			
+			var ele = document.getElementsByName('gender');
+              
+            for(i = 0; i < ele.length; i++) {
+                if(ele[i].checked)
+                gender=ele[i].value;
+			}
+			alert("Hi, my name is "+name+"! I am a "+gender+"."+student+" My hobby is "+hobby+".");
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="section">
+  <div class="container" >
+	  
+    <center><h1>Forms Showcase</h1></center>
+	  <div class="frmShowcase">
+		<form method="post">
+			<label for="name">Name : </label>
+			<input type="text" id="name" name="name" value="" ><br><br>
+			
+			Gender : <br>
+			<input type="radio" name="gender" value="boy" id="rad1">Male
+			<input type="radio" name="gender" value="girl" id="rad2">Female
+			<br><br>
+			
+			<input type="checkbox" id="chkBox" name="vehicle1" value=" I am a Student.">
+			<label for="chkBox"> A student?</label><br><br>
+			  
+			<label for="cars">Choose a hobby:</label>
+
+			<select name="hobby" id="hobby">
+			  <option value="coding">Coding</option>
+			  <option value="drawing">Drawing</option>
+			  <option value="gaming">Gaming</option>
+			  <option value="fishing">Fishing</option>
+			</select>
+			<br><br>
+			<input type="submit" value="Submit" onclick="getInputValue();">
+			
+		</form> 
+	</div>
+</div>
+	  
+	  
+  </div>
+</div>
+		
+</body>
+</html>

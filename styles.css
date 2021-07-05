@@ -159,6 +159,15 @@ footer {
 ul li  {
 }
 
+
+.frmShowcase input{
+	width:15%;
+}
+
+#chkBox,#rad1,#rad2{
+	width:5%;
+}
+
 @media(max-height:800px) {
 	footer {position:static;}
 	
@@ -336,7 +345,7 @@ input {
 	.topnavM a:hover {
     background-color: #FFE18A;
     color: black;
-}
+	}
 
 
 }
